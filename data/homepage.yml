@@ -1,0 +1,151 @@
+head:
+  title: "Jikai Wang personal website"
+  description: "Nice to meet you!"
+# showcase
+showcase:
+  enable: true
+  title: "Hello, I'm Jikai."
+  subtitle: "Current Cornell Meng student"
+  description: >
+    I am an M.Eng student in Electrical and Computer Engineering at Cornell University, with a first degree BSc (Hons) in Physics from The University of Manchester.
+     My expertise lies in
+    embedded linux and FPGA design, where I have developed a range of projects such as RISCV pipeline processor and motion detection system using Raspberry Pi.
+    I'm currently in Professor Christopher Batten's research group working on a design project using Allo, a Python-embedded domain-specific language,
+    to develop accelerators mapped to an Alveo U250 FPGA and compared against Intel Xeon CPU performance.
+  image:
+    x: "image/website_1.jpg"
+    _2x: "image/website_1.jpg"
+
+  imageMobile:
+    x: "image/website_1.jpg"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "mailto:happywjk123@gmail.com"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/jikai-wang-b4b520323/"
+
+    - icon: "github"
+      URL: "https://github.com/happywjk"
+
+# about
+about:
+  enable: true
+  title: "Who am I?"
+  content: >
+    <p class="lead">
+      I am a versatile engineer with a blend of research and hardware expertise. Transitioning from physics to hardware through self-study, 
+      I've mastered Verilog, FPGA design, and embedded systems. This ability to rapidly acquire new skills is reflected in my work, from building 
+      embedded Linux systems on Beaglebone Black to investigating the electrical properties of graphene. My broad technical interests, from embedded 
+      systems to advanced material research to FPGA, enable me to develop comprehensive solutions.   
+      </p>
+
+      <p class="lead">
+      Outside of work, I enjoy staying active through hiking and long-distance running, finding balance and inspiration in the mountains. 
+      Cooking is another passion of mine, where I love to experiment with Chinese and Korean recipes, exploring flavors and techniques.
+      I've traveled to diverse places like the Netherlands and Italy, 
+      as well as vibrant cities in Britain such as Edinburgh and London. 
+      These experiences continue to fuel my curiosity and deepen my appreciation for discovering new cultures and ideas.
+      
+
+    </p>
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/in/jikai-wang-b4b520323/"
+  image:
+    x: "image/website_3.png"
+    _2x: "images/who-am-i/user-picture@2x.png"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "Cornell University"
+      year: "Expected December 2025"
+      degree: "Master of Engineering in Electrical and Computer engineering"
+
+    - university: "University of Manchester"
+      year: "Sept 2020 - June 2023"
+      degree: "Bachelor of Science (Hon) in Physics, first degree with GPA: 3.91/4.0"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: >
+   I am an engineer with a strong foundation in physics and electrical engineering, specializing in embedded systems, FPGA design. 
+   With a blend of hands-on project experience and research in areas like graphene and quantum algorithms, I quickly adapt to new challenges and technologies.
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/jikai-wang-b4b520323/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My CV"
+    URL: "/Jikai Wang CV.pdf"
+
+# Client & Work
+client_and_work:
+  title: "Clients & Works"
+  enable: false
+  
+# testimonial
+testimonial:
+  enable: false
+  title: "Testimonials"
+  items:
+    - name: "Daniel Jordan"
+      position: "Phonet, CEO"
+      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
+      image:
+        x: "images/testimonials/daniel-jordan.jpg"
+        _2x: "images/testimonials/daniel-jordan@2x.jpg"
+
+    - name: "Jonathan Peters"
+      position: "Textic, CEO"
+      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
+      image:
+        x: "images/testimonials/jonathan-peters.jpg"
+        _2x: "images/testimonials/jonathan-peters@2x.jpg"
+
+    - name: "Antonio Willis"
+      position: "Cyberse, CEO"
+      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
+      image:
+        x: "images/testimonials/antonio-willis.jpg"
+        _2x: "images/testimonials/antonio-willis@2x.jpg"
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "#"
+    full_name: "Jikai Wang"
+    email: "happywjk123@gmail.com"
+    message: "Type Your Message Here"
+  phone:
+    title: "Phone Number"
+    number: "+1 (607) 319-2699"
+  email:
+    title: "Email"
+    email: '<a href="mailto:mail@example.com">happywjk123@gmail.com</a>'
+  address:
+    title: "Address"
+    address: "100 Fairview Square <br />14850, Ithaca, New York"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+
+# newsletter
+newsletter:
+  enable: False
+  title: "Newsletter subscription"
+  success_message: "Successfully subscribed"
+  error_message: "Error while subscribing."
+  note: "We'll never share your email with anyone else."
