@@ -87,7 +87,7 @@ experience:
   button2:
     icon: "icon-profile-fill"
     btnText: "Download My CV"
-    URL: "/Jikai Wang CV.pdf"
+    URL: "/Jikai_Wang_CV.pdf"
 
 # Client & Work
 client_and_work:
