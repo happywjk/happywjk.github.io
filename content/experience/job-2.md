@@ -10,8 +10,85 @@ duration: "2024"
 ---
 ### Pipelined Processor Design and Evaluation using Verilog and PyMTL3
 
-In my current work, I designed and implemented a five-stage pipelined processor supporting the TinyRV2 instruction set architecture (ISA) using Verilog and PyMTL3. This processor was designed in two microarchitectures: one using stalling to resolve data hazards and another that fully bypassed data using Software Predication, reducing the need for stalls. Both designs can correctly handle all kinds of hazard and interrupts/exception, ensuring that instructions flow smoothly through fetch, decode, execute, memory, and write-back stages without causing hazards or performance degradation.
+This project progressed through a structured series focusing on developing a pipelined processor, designing caches, and integrating these components into a multi-core system.  
 
-I implemented a comprehensive testing strategy, focusing on unit tests for individual instructions, such as add, lw, and bne, and parameterized integration tests that validated instruction sets and memory operations. Utilizing pytest, I automated test generation and validation, ensuring the processors' correctness under a variety of conditions. This process included both directed and random testing strategies to simulate various real-world scenarios.
+---
 
-To evaluate performance, I conducted simulation-based analyses measuring cycles-per-instruction (CPI), instruction throughput, and memory latency. By benchmarking both the stalling and fully bypassed microarchitectures, I analyzed the trade-offs between simpler control logic and performance improvements. This comprehensive approach not only improved the designs' robustness but also provided insights into optimizing memory interfaces and processor pipelines for enhanced performance across different workloads​.
+## 1. Pipelined Processor Design
+**Objective:**  
+Design and implement a five-stage pipelined processor supporting the TinyRV2 ISA.  
+
+**Workflow:**  
+- **Baseline Processor (Stalling):**  
+  Implemented a basic five-stage pipeline with stalling for hazard resolution.  
+- **Alternative Processor (Bypassing):**  
+  Added bypassing paths to resolve data hazards, reducing unnecessary stalls.  
+- **Pipeline Stages:**  
+  1. **F (Fetch):** Instruction fetch and PC increment.  
+  2. **D (Decode):** Decode instructions, read registers, and handle jump targets.  
+  3. **X (Execute):** Perform ALU operations, compute memory addresses, and branch comparisons.  
+  4. **M (Memory Access):** Read/write data to memory.  
+  5. **W (Writeback):** Write results back to registers.  
+- **Hazard Mitigation:**  
+  - Data hazards addressed through forwarding and stalls.  
+  - Control hazards managed with squash logic in the decode stage&#8203;:contentReference[oaicite:0]{index=0}.  
+- **Testing:**  
+  Directed and randomized tests using Pytest for each pipeline stage and instruction.  
+
+---
+
+## 2. Cache Design
+**Objective:**  
+Implement direct-mapped and set-associative caches to reduce memory access latency.  
+
+**Workflow:**  
+- **Baseline Cache:**  
+  Direct-mapped, write-back, write-allocate cache with 256-byte capacity.  
+- **Alternative Cache:**  
+  Two-way set-associative cache to reduce conflict misses&#8203;:contentReference[oaicite:1]{index=1}.  
+- **Cache Organization:**  
+  - **Banked Design:** Supports multi-core by partitioning the cache into four banks, enabling concurrent access.  
+  - **FSM Control:** Designed a finite-state machine (FSM) to manage cache states (idle, read, write, eviction, refill).  
+- **Testing:**  
+  - Functional-level model (FL) verified initial correctness.  
+  - Unit tests covered cache hits, misses, evictions, and memory interactions.  
+
+---
+
+## 3. Multi-Core System Design
+**Objective:**  
+Compose single-core and multi-core systems using the previously designed processor and cache components.  
+
+**Workflow:**  
+- **Single-Core System:**  
+  - Integrated the pipelined processor with private instruction and data caches.  
+  - Developed a sorting microbenchmark for single-threaded performance analysis&#8203;:contentReference[oaicite:2]{index=2}.  
+- **Multi-Core System:**  
+  - Composed four cores, each with private instruction caches, connected by a shared, banked data cache.  
+  - Implemented a **ring network** to interconnect cores and caches.  
+- **Ring Network:**  
+  - Four routers connected in a loop, facilitating cache coherence and memory requests/responses.  
+  - Messages traverse routers, with arbitration logic managing congestion.  
+- **Testing:**  
+  - Incremental testing of network components (routers, adapters).  
+  - Full-system tests for memory coherence, network congestion, and correctness.  
+
+---
+
+## Evaluation and Benchmarking
+- **Metrics:**  
+  - **Cycles Per Instruction (CPI):** Measured the efficiency of pipelining and bypassing mechanisms.  
+  - **Throughput:** Evaluated single-threaded vs. multi-threaded sorting performance.  
+  - **Memory Latency:** Analyzed cache access times and network latencies.  
+- **Performance Comparison:**  
+  - Compared baseline (single-core) and alternative (multi-core) designs using sorting benchmarks.  
+  - Multi-core systems demonstrated reduced latency and improved throughput for parallel workloads.  
+
+---
+
+## Future Plans
+- **Optimization:**  
+  - Implement more sophisticated cache replacement policies and improve network routing algorithms.  
+  - Explore dynamic voltage and frequency scaling (DVFS) for energy-efficient multi-core operation.  
+- **Advanced Benchmarking:**  
+  - Apply the design to more complex multi-threaded benchmarks beyond sorting algorithms to evaluate real-world performance.
