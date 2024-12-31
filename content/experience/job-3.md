@@ -8,10 +8,58 @@ company: "Manchester University "
 duration: "2024"
 
 ---
-### Raspberry Pi 4 Motion Detection and Surveillance System 
+### GAN-Based Image Transformation System Workflow  
 
-In this project, I developed a motion detection system using a Raspberry Pi 4, leveraging a PIR (Passive Infrared) sensor to detect movement. The system integrates an indicator light to provide immediate feedback when motion is detected, offering a simple yet effective way to monitor activity in real-time.
+The project focuses on developing a portable GAN-based image transformation system using a Raspberry Pi 4, Pi camera, and PiTFT touchscreen. The goal was to capture images, apply transformations (such as day-to-night conversion), and display results in real time through a user-friendly interface.  
 
-Additionally, I implemented a photo capture and upload feature using the V2 Pi Camera. Whenever motion is detected, the system automatically captures an image and uploads it to a designated storage location. To enhance user experience, I included an email notification feature that sends an alert with the photo, timestamp, and location details, ensuring that users are promptly informed about any activity.
+---
 
-To further streamline interaction with the system, I designed a user-friendly webpage that allows users to view newly captured photos, access the latest capture details, and modify camera settings. The webpage includes features for both manual and scheduled photo or video captures, giving users full control over the system’s configuration. This comprehensive design makes it easy for users to monitor their surroundings and customize their preferences remotely.
+#### System Setup  
+- Configured the Raspberry Pi with Raspbian OS and installed PyTorch.  
+- Enabled touch control on the PiTFT and verified functionality.  
+
+---
+
+#### Model Development  
+- **Conditional GAN (CGAN):**  
+  - Developed using convolutional layers to generate labeled digit images (initially trained on MNIST).  
+  - Transitioned from linear to convolutional layers for handling high-resolution inputs.  
+  
+- **Pix2Pix for Day-to-Night Transformation:**  
+  - Implemented a U-Net-based Pix2Pix model for paired image-to-image translation.  
+  - Preprocessed 18,000 paired images (resizing, color jitter, horizontal flip).  
+  - Trained the model for 400 epochs using multi-GPU setups (GTX 1080, TITAN Xp, RTX 3090).  
+  
+- **Multi-GPU Training:**  
+  - Training scripts were modified to utilize multiple GPUs, accelerating processing.  
+
+---
+
+#### Integration  
+- Developed a Python interface for the Pi camera, enabling one-click image capture and transformation through the PiTFT.  
+- Integrated trained GAN models to allow real-time transformations on the PiTFT screen.  
+
+---
+
+#### Testing and Validation  
+- **Conditional GAN:** Successfully generated digit images from MNIST.  
+- **Pix2Pix:** Initial results for day-to-night transformation were blurry, requiring refinement.  
+- **Challenges:**  
+  - Long training times, even with multi-GPU setups.  
+  - Blurry outputs from Pix2Pix, necessitating hyperparameter tuning.  
+
+---
+
+#### Results  
+- **Successes:**  
+  - Deployed Conditional GAN and Pix2Pix models for image transformations.  
+  - Demonstrated real-time GAN operation on embedded hardware.  
+- **Limitations:**  
+  - Pix2Pix outputs needed additional tuning for improved clarity.  
+
+---
+
+#### Future Work  
+- Further refine the Pix2Pix model and explore alternative architectures.  
+- Automate hyperparameter tuning and leverage transfer learning.  
+- Expand transformation capabilities with additional styles and effects.  

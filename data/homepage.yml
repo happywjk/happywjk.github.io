@@ -7,11 +7,13 @@ showcase:
   title: "Hello, I'm Jikai."
   subtitle: "Current Cornell Meng student"
   description: >
-    I am an M.Eng student in Electrical and Computer Engineering at Cornell University, with a first degree BSc (Hons) in Physics from The University of Manchester.
-     My expertise lies in
-    embedded linux and FPGA design, where I have developed a range of projects such as RISCV pipeline processor and motion detection system using Raspberry Pi.
-    I'm currently in Professor Christopher Batten's research group working on a design project using Allo, a Python-embedded domain-specific language,
-    to develop accelerators mapped to an Alveo U250 FPGA and compared against Intel Xeon CPU performance.
+
+I am an M.Eng student in Electrical and Computer Engineering at Cornell University, holding a BSc (Hons) in Physics from The University of Manchester.  
+
+My expertise lies in FPGA design and machine learning, with experience developing and accelerating neural networks using PyTorch and hls. I have worked on projects such as RISC-V pipelined processors, GAN-based image transformation systems on Raspberry Pi, and mnist mlp accelerators for FPGA platforms.  
+
+Currently, I am a research assistant in Professor Christopher Batten’s group, focusing on accelerator design with Allo, a Python-embedded domain-specific language. My work involves developing FPGA accelerators mapped to an Alveo U250, benchmarking performance against Intel Xeon CPUs.  
+
   image:
     x: "image/website_1.jpg"
     _2x: "image/website_1.jpg"
@@ -53,6 +55,14 @@ about:
       hahhahaha
 
     </p>
+    <p class="lead">
+I am a versatile engineer with a strong foundation in research and hardware design. Transitioning from physics to hardware through dedicated self-study, I have developed expertise in Verilog, FPGA design, and high level synthesis. My diverse technical background, spanning embedded systems, machine learning, FPGA design and Physics, allows me to craft innovative and comprehensive solutions.  
+</p>
+
+<p class="lead">
+Beyond engineering, I stay active through hiking and long-distance running, drawing inspiration from time spent in the mountains. I also enjoy exploring culinary arts, experimenting with Chinese and Korean recipes to expand my skills and appreciation for flavor. My travels have taken me to the Netherlands, Italy, and cities across Britain such as Edinburgh and London, enriching my perspective and deepening my interest in different cultures and ideas.  
+</p>
+
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"

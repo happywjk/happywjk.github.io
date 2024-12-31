@@ -14,7 +14,7 @@ This project progressed through a structured series focusing on developing a pip
 
 ---
 
-## 1. Pipelined Processor Design
+#### 1. Pipelined Processor Design
 **Objective:**  
 Design and implement a five-stage pipelined processor supporting the TinyRV2 ISA.  
 
@@ -37,7 +37,7 @@ Design and implement a five-stage pipelined processor supporting the TinyRV2 ISA
 
 ---
 
-## 2. Cache Design
+#### 2. Cache Design
 **Objective:**  
 Implement direct-mapped and set-associative caches to reduce memory access latency.  
 
@@ -55,7 +55,7 @@ Implement direct-mapped and set-associative caches to reduce memory access laten
 
 ---
 
-## 3. Multi-Core System Design
+#### 3. Multi-Core System Design
 **Objective:**  
 Compose single-core and multi-core systems using the previously designed processor and cache components.  
 
@@ -75,7 +75,7 @@ Compose single-core and multi-core systems using the previously designed process
 
 ---
 
-## Evaluation and Benchmarking
+#### Evaluation and Benchmarking
 - **Metrics:**  
   - **Cycles Per Instruction (CPI):** Measured the efficiency of pipelining and bypassing mechanisms.  
   - **Throughput:** Evaluated single-threaded vs. multi-threaded sorting performance.  
@@ -86,7 +86,7 @@ Compose single-core and multi-core systems using the previously designed process
 
 ---
 
-## Future Plans
+#### Future Plans
 - **Optimization:**  
   - Implement more sophisticated cache replacement policies and improve network routing algorithms.  
   - Explore dynamic voltage and frequency scaling (DVFS) for energy-efficient multi-core operation.  
