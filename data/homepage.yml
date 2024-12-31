@@ -8,11 +8,11 @@ showcase:
   subtitle: "Current Cornell Meng student"
   description: >
 
-I am an M.Eng student in Electrical and Computer Engineering at Cornell University, holding a BSc (Hons) in Physics from The University of Manchester.  
+    I am an M.Eng student in Electrical and Computer Engineering at Cornell University, holding a BSc (Hons) in Physics from The University of Manchester.  
 
-My expertise lies in FPGA design and machine learning, with experience developing and accelerating neural networks using PyTorch and hls. I have worked on projects such as RISC-V pipelined processors, GAN-based image transformation systems on Raspberry Pi, and mnist mlp accelerators for FPGA platforms.  
+    My expertise lies in FPGA design and machine learning, with experience developing and accelerating neural networks using PyTorch and hls. I have worked on projects such as RISC-V pipelined processors, GAN-based image transformation systems on Raspberry Pi, and mnist mlp accelerators for FPGA platforms.  
 
-Currently, I am a research assistant in Professor Christopher Batten’s group, focusing on accelerator design with Allo, a Python-embedded domain-specific language. My work involves developing FPGA accelerators mapped to an Alveo U250, benchmarking performance against Intel Xeon CPUs.  
+    Currently, I am a research assistant in Professor Christopher Batten's group, focusing on accelerator design with Allo, a Python-embedded domain-specific language. My work involves developing FPGA accelerators mapped to an Alveo U250, benchmarking performance against Intel Xeon CPUs.  
 
   image:
     x: "image/website_1.jpg"
@@ -39,29 +39,12 @@ about:
   title: "Who am I?"
   content: >
     <p class="lead">
-      I am a versatile engineer with a blend of research and hardware expertise. Transitioning from physics to hardware through self-study, 
-      I've mastered Verilog, FPGA design, and embedded systems. This ability to rapidly acquire new skills is reflected in my work, from building 
-      embedded Linux systems on Beaglebone Black to investigating the electrical properties of graphene. My broad technical interests, from embedded 
-      systems to advanced material research to FPGA, enable me to develop comprehensive solutions.   
-      </p>
-
-      <p class="lead">
-      Outside of work, I enjoy staying active through hiking and long-distance running, finding balance and inspiration in the mountains. 
-      Cooking is another passion of mine, where I love to experiment with Chinese and Korean recipes, exploring flavors and techniques.
-      I've traveled to diverse places like the Netherlands and Italy, 
-      as well as vibrant cities in Britain such as Edinburgh and London. 
-      These experiences continue to fuel my curiosity and deepen my appreciation for discovering new cultures and ideas.
-      
-      hahhahaha
-
+    I am a versatile engineer with a strong foundation in research and hardware design. Transitioning from physics to hardware through dedicated self-study, I have developed expertise in Verilog, FPGA design, and high level synthesis. My diverse technical background, spanning embedded systems, machine learning, FPGA design and physics, allows me to craft innovative and comprehensive solutions.  
     </p>
-    <p class="lead">
-I am a versatile engineer with a strong foundation in research and hardware design. Transitioning from physics to hardware through dedicated self-study, I have developed expertise in Verilog, FPGA design, and high level synthesis. My diverse technical background, spanning embedded systems, machine learning, FPGA design and Physics, allows me to craft innovative and comprehensive solutions.  
-</p>
 
-<p class="lead">
-Beyond engineering, I stay active through hiking and long-distance running, drawing inspiration from time spent in the mountains. I also enjoy exploring culinary arts, experimenting with Chinese and Korean recipes to expand my skills and appreciation for flavor. My travels have taken me to the Netherlands, Italy, and cities across Britain such as Edinburgh and London, enriching my perspective and deepening my interest in different cultures and ideas.  
-</p>
+    <p class="lead">
+    Beyond engineering, I stay active through hiking and long-distance running, drawing inspiration from time spent in the mountains. I also enjoy exploring culinary arts, experimenting with Chinese and Korean recipes to expand my skills and appreciation for flavor. My travels have taken me to the Netherlands, Italy, and cities across Britain such as Edinburgh and London, enriching my perspective and deepening my interest in different cultures and ideas.  
+    </p>
 
   button:
     icon: "icon-smile-fill"
