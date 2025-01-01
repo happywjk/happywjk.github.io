@@ -1,7 +1,7 @@
 ---
 date: 2024-09-15T00:00:00+01:00
 draft: false
-title: "pipeline processor"
+title: "RISC-V pipeline processor"
 jobTitle: "RISC-V pipeline processor"
 company: "Cornell University "
 location: "Ithaca, NewYork"

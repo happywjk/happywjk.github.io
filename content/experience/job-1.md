@@ -1,7 +1,7 @@
 ---
 date: 2024-09-15T00:00:00+01:00
 draft: false
-title: "RA #1"
+title: "Research Assistant"
 jobTitle: "Research Assistant on ML hardware accelerator"
 company: "Computer Systems Laboratory "
 location: "Ithaca, NewYork"

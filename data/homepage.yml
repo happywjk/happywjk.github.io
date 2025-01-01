@@ -8,10 +8,11 @@ showcase:
   subtitle: "Current Cornell Meng student"
   description: >
 
-    I am an M.Eng student in Electrical and Computer Engineering at Cornell University, holding a BSc (Hons) in Physics from The University of Manchester.  
+    I am an M.Eng student in Electrical and Computer Engineering at Cornell University, holding a BSc (Hons) in Physics from The University of Manchester.  My expertise lies in FPGA design and machine learning, with experience developing and accelerating neural networks using PyTorch and hls. I have worked on projects such as RISC-V pipelined processors, GAN-based image transformation systems on Raspberry Pi, and mnist mlp accelerators for FPGA platforms.  
 
-    My expertise lies in FPGA design and machine learning, with experience developing and accelerating neural networks using PyTorch and hls. I have worked on projects such as RISC-V pipelined processors, GAN-based image transformation systems on Raspberry Pi, and mnist mlp accelerators for FPGA platforms.  
+    </p>
 
+    <p class="lead">
     Currently, I am a research assistant in Professor Christopher Batten's group, focusing on accelerator design with Allo, a Python-embedded domain-specific language. My work involves developing FPGA accelerators mapped to an Alveo U250, benchmarking performance against Intel Xeon CPUs.  
 
   image:

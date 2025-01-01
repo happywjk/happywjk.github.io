@@ -1,14 +1,14 @@
 ---
 date: 2024-09-09T00:00:00+01:00
 draft: false
-title: "Raspberry Pi 4"
-jobTitle: " Raspberry Pi 4 Motion Detection"
-company: "Manchester University "
+title: "GAN-Based Image Transformation System"
+jobTitle: " GAN-Based Image Transformation System"
+company: "Cornell University "
 
 duration: "2024"
 
 ---
-### GAN-Based Image Transformation System Workflow  
+### GAN-Based Image Transformation System   
 
 The project focuses on developing a portable GAN-based image transformation system using a Raspberry Pi 4, Pi camera, and PiTFT touchscreen. The goal was to capture images, apply transformations (such as day-to-night conversion), and display results in real time through a user-friendly interface.  
 
